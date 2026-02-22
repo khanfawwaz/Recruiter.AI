@@ -1,0 +1,221 @@
+/* Screen4 */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 16px;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 32px;
+    width: 100%;
+    max-width: 520px;
+}
+
+.screenLabel {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--gray-400);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.screenTitle {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 16px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid var(--gray-200);
+    margin: 0 0 18px;
+}
+
+.summaryBox {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.clockIcon {
+    color: var(--black);
+    flex-shrink: 0;
+}
+
+.summaryTitle {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.summarySub {
+    font-size: 12px;
+    color: var(--gray-500);
+    margin-top: 3px;
+}
+
+.hitlBox {
+    border-left: 3px solid var(--black);
+    padding: 11px 14px;
+    font-size: 13px;
+    color: var(--gray-600);
+    margin-bottom: 20px;
+    background: var(--gray-50);
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.pendingLabel {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--gray-400);
+    margin-bottom: 10px;
+}
+
+.pendingList {
+    margin-bottom: 20px;
+}
+
+.pendingItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--gray-200);
+    gap: 12px;
+}
+
+.pendingItem:last-child {
+    border-bottom: none;
+}
+
+.pendingLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    background: var(--gray-200);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--gray-500);
+}
+
+.pendingName {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.pendingScore {
+    font-size: 11px;
+    color: var(--gray-400);
+}
+
+.badge {
+    padding: 5px 12px;
+    border-radius: var(--radius);
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.badgeInterview {
+    background: var(--black);
+    color: var(--white);
+}
+
+.badgeHold {
+    background: var(--gray-200);
+    color: var(--gray-600);
+    border: 1px solid var(--border);
+}
+
+.badgeReject {
+    background: var(--white);
+    color: var(--gray-400);
+    border: 1px solid var(--border);
+}
+
+.options {
+    margin-bottom: 24px;
+}
+
+.optionsLabel {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--gray-400);
+    margin-bottom: 10px;
+}
+
+.checkRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--black);
+    cursor: pointer;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.checkRow input {
+    width: 15px;
+    height: 15px;
+    accent-color: var(--black);
+    cursor: pointer;
+}
+
+.btnPrimary {
+    width: 100%;
+    padding: 13px;
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: opacity .15s;
+}
+
+.btnPrimary:hover {
+    opacity: 0.85;
+}
+
+.btnOutline {
+    width: 100%;
+    padding: 12px;
+    background: var(--white);
+    color: var(--black);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background .15s;
+}
+
+.btnOutline:hover {
+    background: var(--gray-100);
+}

@@ -1,0 +1,154 @@
+/* Screen2 */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 16px;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 32px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screenLabel {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--gray-400);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    align-self: flex-start;
+}
+
+.screenTitle {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 16px;
+    align-self: flex-start;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid var(--gray-200);
+    margin: 0 0 12px;
+    width: 100%;
+}
+
+.spinnerWrap {
+    margin: 28px 0 24px;
+}
+
+.spinner {
+    width: 52px;
+    height: 52px;
+    border: 3px solid var(--gray-200);
+    border-top-color: var(--black);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.stepsList {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 24px;
+}
+
+.stepItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    font-size: 14px;
+    color: var(--gray-400);
+}
+
+.stepItem.done {
+    color: var(--black);
+}
+
+.stepItem.active {
+    color: var(--black);
+    font-weight: 500;
+}
+
+.stepIcon {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid var(--gray-300);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.done .stepIcon {
+    background: var(--black);
+    border-color: var(--black);
+}
+
+.done .stepIcon::after {
+    content: '✓';
+    color: var(--white);
+    font-size: 11px;
+}
+
+.active .stepIcon {
+    border-color: var(--black);
+}
+
+.active .stepIcon::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--black);
+}
+
+.progressWrap {
+    width: 100%;
+    max-width: 280px;
+    height: 6px;
+    background: var(--gray-200);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.progressBar {
+    height: 100%;
+    background: var(--black);
+    border-radius: 3px;
+    transition: width .5s ease;
+}
+
+.desc {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.sub {
+    font-size: 12px;
+    color: var(--gray-400);
+    text-align: center;
+}

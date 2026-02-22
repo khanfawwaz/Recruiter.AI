@@ -1,0 +1,198 @@
+/* Screen3 */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 16px;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 32px;
+    width: 100%;
+    max-width: 940px;
+}
+
+.screenLabel {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--gray-400);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.screenTitle {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 16px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid var(--gray-200);
+    margin: 0 0 16px;
+}
+
+.banner {
+    background: var(--gray-100);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.tableWrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.table thead th {
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--gray-500);
+    background: var(--gray-50);
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid var(--gray-200);
+    transition: background .12s;
+}
+
+.table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.table tbody tr:hover {
+    background: var(--gray-50);
+}
+
+.table td {
+    padding: 14px;
+    vertical-align: middle;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.edu {
+    font-size: 12px;
+    color: var(--gray-400);
+    margin-top: 2px;
+}
+
+.exp {
+    white-space: nowrap;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.tag {
+    padding: 3px 8px;
+    background: var(--gray-100);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--gray-600);
+}
+
+.score {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.actionBtn {
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 12px;
+    font-weight: 500;
+    background: var(--white);
+    color: var(--black);
+    cursor: pointer;
+    transition: all .12s;
+    white-space: nowrap;
+}
+
+.actionBtn:hover {
+    background: var(--gray-100);
+}
+
+.selInterview {
+    background: var(--black) !important;
+    color: var(--white) !important;
+    border-color: var(--black) !important;
+}
+
+.selHold {
+    background: var(--gray-200) !important;
+    color: var(--black) !important;
+    border-color: var(--gray-300) !important;
+    font-weight: 600 !important;
+}
+
+.selReject {
+    color: var(--gray-400) !important;
+    text-decoration: line-through;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.hint {
+    font-size: 12px;
+    color: var(--gray-400);
+}
+
+.btnPrimary {
+    padding: 11px 22px;
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity .15s;
+    white-space: nowrap;
+}
+
+.btnPrimary:hover {
+    opacity: 0.85;
+}

@@ -1,0 +1,61 @@
+/* App-level done screen styles */
+.doneWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 16px;
+}
+
+.doneCard {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 48px 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.doneIcon {
+    width: 64px;
+    height: 64px;
+    background: var(--black);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin: 0 auto 20px;
+}
+
+.doneTitle {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.doneSub {
+    font-size: 14px;
+    color: var(--gray-500);
+    margin-bottom: 32px;
+}
+
+.btnPrimary {
+    width: 100%;
+    padding: 13px;
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity .15s;
+}
+
+.btnPrimary:hover {
+    opacity: 0.85;
+}

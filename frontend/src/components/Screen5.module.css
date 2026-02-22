@@ -1,0 +1,217 @@
+/* Screen5 */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 16px;
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 32px;
+    width: 100%;
+    max-width: 680px;
+}
+
+.screenLabel {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--gray-400);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.screenTitle {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 16px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid var(--gray-200);
+    margin: 0 0 16px;
+}
+
+.mvpBanner {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    font-size: 13px;
+    color: #856700;
+    margin-bottom: 16px;
+}
+
+.intro {
+    font-size: 13px;
+    color: var(--gray-500);
+    margin-bottom: 14px;
+}
+
+.emailCard {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.emailHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: background .12s;
+}
+
+.emailHeader:hover {
+    background: var(--gray-50);
+}
+
+.emailLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.mailIcon {
+    color: var(--gray-400);
+    display: flex;
+}
+
+.emailName {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.emailAddr {
+    font-size: 12px;
+    color: var(--gray-400);
+}
+
+.chevron {
+    color: var(--gray-400);
+    font-size: 20px;
+    transition: transform .2s;
+    display: block;
+    transform: rotate(0deg);
+}
+
+.open {
+    transform: rotate(90deg) !important;
+}
+
+.emailBody {
+    padding: 16px;
+    border-top: 1px solid var(--gray-200);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.subject {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.bodyText {
+    color: var(--gray-600);
+    margin-bottom: 14px;
+}
+
+.timeProp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: var(--gray-100);
+    border-radius: var(--radius);
+}
+
+.calIcon {
+    color: var(--gray-500);
+    display: flex;
+}
+
+.propLabel {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: var(--gray-400);
+}
+
+.propVal {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.note {
+    background: var(--gray-50);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    font-size: 13px;
+    color: var(--gray-600);
+    margin: 16px 0;
+}
+
+.error {
+    background: #fff1f2;
+    border: 1px solid #fecdd3;
+    border-radius: var(--radius);
+    padding: 10px 12px;
+    font-size: 13px;
+    color: #be123c;
+    margin-bottom: 12px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btnPrimary {
+    flex: 1;
+    padding: 13px;
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity .15s;
+}
+
+.btnPrimary:hover:not(:disabled) {
+    opacity: 0.85;
+}
+
+.loading {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btnOutline {
+    flex: 1;
+    padding: 12px;
+    background: var(--white);
+    color: var(--black);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background .15s;
+}
+
+.btnOutline:hover:not(:disabled) {
+    background: var(--gray-100);
+}

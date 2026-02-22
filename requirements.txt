@@ -1,0 +1,23 @@
+# ─── Recruiter AI – MVP requirements ────────────────────────
+# Only what we actually need: FastAPI + Gemini + PDF parsing
+
+# Web framework
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+
+# AI / LLM
+google-generativeai>=0.5.4
+
+# PDF extraction
+pdfplumber>=0.11.0
+
+# Settings management
+pydantic-settings>=2.2.1
+
+# Python-dotenv (optional but handy for local .env loading)
+python-dotenv>=1.0.1
+
+# ── Removed (not needed for MVP) ──
+# sqlalchemy, alembic, psycopg2  → no database
+# passlib, python-jose            → no auth
+# aiosmtplib                      → no email sending
